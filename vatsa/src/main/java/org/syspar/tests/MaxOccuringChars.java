@@ -26,7 +26,19 @@ public class MaxOccuringChars {
         return result;
     }
 
+    private static void getMaxChars(String str) {
+
+        char[] characters = str.toCharArray();
+
+        System.out.println("****");
+        for (char c : characters) {
+            System.out.println(c);
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println(getMaxOccuringChar("akfjkfdksfjeirefkdafjfjiorueiqewjkads"));
+
+        getMaxChars("akfjkfdksfjeirefkdafjfjiorueiqewjkads");
     }
 }
